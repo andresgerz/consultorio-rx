@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultorio Radiológico</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <table>
+      <tr>
+        <td>
+          <h1>LOGO</h1>
+        </td>
+        <td>
+          <nav>
+            <ul>
+              <table cellspacing="25">
+                <tr>
+                  <td>
+                    <li><a href="../index.html">Inicio</a></li>
+                  </td>
+                  <td>
+                    <li><a href="./estudios.html">Estudios</a></li>
+                  </td>
+                  <td>
+                    <li><a href="./turnos.html">Turnos</a></li>
+                  </td>
+                  <td>
+                    <li><a href="./obras-sociales.html">Obras Sociales</a></li>
+                  </td>
+                  <td>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                  </td>
+                </tr>
+              </table>
+            </ul>
+          </nav>
+        </td>
+        <td>
+          <form name="form-search" method="get">
+            <input 
+              type="text" 
+              name="search_name" 
+              id="search" value="" 
+              placeholder="Search">
+            <button 
+              type="submit"
+              name="enviar_busqueda"
+              value="enviar_busqueda">
+              Search
+            </button>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <hr>
+  </header>
+  <main>
+    <table class="table-estudios" border="1" cellspacing="5" cellpadding="5">
+      <caption><h1>Estudios</h1></caption>
+      <thead>
+        <tr>
+          <th colspan="2">Estudios</th>
+          <th>Modalidad</th>
+          <th>Requisitos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Radiografías</td>
+          <td>En general</td>
+          <td>por orden de llegada</td>
+          <td>No trear puesto objetos metalicos: pulsera, collar, joyas, etc.
+            Traer ropa sin botones ni cierres
+          </td>
+        </tr>
+        <tr>
+        <td rowspan="2">Ecografías</td>
+        <td>
+          <ul>
+            <li>Abdominal</li>
+            <li>Renal</li>
+            <li>Embarazo menor a 2 meses</li>
+            <li>Prostata</li>
+            <li>Ginecológica</li>
+            <li>Vejiga</li>
+          </ul>
+        </td>
+        <td rowspan="2">por turno</td>
+        <td rowspan="1">con ganas de orinar</td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tiroides</li>
+              <li>Partes blandas</li>
+              <li>Extremidades</li>
+            </ul>
+          </td>
+          <td>Ninguna</td>
+        </tr>
+        <tr>
+          <td>Mamografias</td>
+          <td>En general</td>
+          <td>Por orden de llegada</td>
+          <td>----</td>
+        </tr> 
+        <tr>
+          <td>Colón por enema doble contraste</td>
+          <td>En general</td>
+          <td>Con turno a la mañana temprano</td>
+          <td>
+            lleva preparación el día anterior.
+            Comprar gastropaque f rectal sachetm limonada roge dos envases
+            buscapina simple dos ampollas
+            traer toalla y ropa sin botones
+          </td>
+        </tr> 
+        <tr>
+          <td>Seriada Esofago Gastroduodenal</td>
+          <td>En general</td>
+          <td>Con turno a la mañana temprano</td>
+          <td>Tiene que estar en ayunas
+            Comprar un contraste sulfato de bario polo-gastropaque s ezem
+            traer toalla y ropa sin botones
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </main>
+  <footer>
+    <hr>
+    <br>
+    <p><strong>&copy; Copyright 2020 - Consultorio Radiológico &reg;</strong></p>
+    <br>
+  </footer>
+</body>
+</html>
