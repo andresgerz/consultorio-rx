@@ -7,60 +7,32 @@
 </head>
 <body>
   <header>
-    <table>
-      <tr>
-        <td>
-          <h1 >LOGO</h1>
-        </td>
-        <td>
-          <nav>
-            <ul>
-              <table cellspacing="25">
-                <tr>
-                  <td>
-                    <li><a href="../index.html">Inicio</a></li>
-                  </td>
-                  <td>
-                    <li><a href="./estudios.html">Estudios</a></li>
-                  </td>
-                  <td>
-                    <li><a href="./turnos.html">Turnos</a></li>
-                  </td>
-                  <td>
-                    <li><a href="./obras-sociales.html">Obras Sociales</a></li>
-                  </td>
-                  <td>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                  </td>
-                </tr>
-              </table>
-            </ul>
-          </nav>
-        </td>
-        <td>
-          <form name="form-search" method="get">
-            <input 
-              type="text" 
-              name="search_name" 
-              id="search" 
-              value="" 
-              placeholder="Search">
-            <button 
-              type="submit"
-              name="enviar_busqueda"
-              value="enviar_busqueda">
-              Search
-            </button>
-          </form>
-        </td>
-      </tr>
-    </table>
-    <br>
-    <br>
-    <hr>
+    <h1 class="logo">LOGO</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./estudios.html">Estudios</a></li>
+        <li><a href="./turnos.html">Turnos</a></li>
+        <li><a href="./obras-sociales.html">Obras Sociales</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <form name="form-search" method="get" class="search">
+      <input 
+        type="text" 
+        name="search_name" 
+        id="search" 
+        value="" 
+        placeholder="Search">
+      <button 
+        type="submit"
+        name="enviar_busqueda"
+        value="enviar_busqueda">
+        Search
+      </button>
+    </form>
   </header>
-  <main>
-    <br>
+  <main id="obras-sociales">
     <h1>Obras Sociales</h1>
     <table class="table-obras-sociales">
       <tbody>
@@ -628,10 +600,8 @@
     </table>
   </main>
   <br>
-  <footer>
-    <hr>
+  <footer id="footer">
     <p><strong>&copy; Copyright 2020 - Consultorio Radiológico &reg;</strong></p>
-    <br>
   </footer>
 </body>
 </html>

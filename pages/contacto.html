@@ -7,88 +7,47 @@
 </head>
 <body>
   <header>
-    <table>
-      <tr>
-        <td>
-          <h1>LOGO</h1>
-        </td>
-        <td>
-          <nav>
-            <ul>
-              <table cellspacing="25">
-                <tr>
-                  <td>
-                    <li><a href="../index.html">Inicio</a></li>
-                  </td>
-                  <td>
-                    <li><a href="./estudios.html">Estudios</a></li>
-                  </td>
-                  <td>
-                    <li><a href="./turnos.html">Turnos</a></li>
-                  </td>
-                  <td>
-                    <li><a href="./obras-sociales.html">Obras Sociales</a></li>
-                  </td>
-                  <td>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                  </td>
-                </tr>
-              </table>
-            </ul>
-          </nav>
-        </td>
-        <td>
-          <form name="form-search" method="get">
-            <input 
-              type="text" 
-              name="search_name" 
-              id="search" 
-              value="" 
-              placeholder="Search">
-            <button 
-              type="submit"
-              name="enviar_busqueda"
-              value="enviar_busqueda">
-              Search
-            </button>
-          </form>
-        </td>
-      </tr>
-    </table>
-    <hr>
+    <h1 class="logo">LOGO</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./estudios.html">Estudios</a></li>
+        <li><a href="./turnos.html">Turnos</a></li>
+        <li><a href="./obras-sociales.html">Obras Sociales</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <form name="form-search" method="get" class="search">
+      <input 
+        type="text" 
+        name="search_name" 
+        id="search" 
+        value="" 
+        placeholder="Search">
+      <button 
+        type="submit"
+        name="enviar_busqueda"
+        value="enviar_busqueda">
+        Search
+      </button>
+    </form>
   </header>
-  <main>
-    <section>
-      <table cellspacing="70" cellpadding="20" >
-        <article>
-          <tr>
-            <td></td>
-            <td rowspan="3">
-              <img src="../images/map.png" alt="map">  
-            </td>
-          </tr>
-          <tr>
-            <td class="ubicacion">
-              <h2>Ubicación</h2>
-              <p>Rivadavia 345</p>
-              <p>General José de San Martín, Chaco</p>
-              <p>CP H3509</p>
-              <p>Tél. (3725) 420072</p>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-        </article>
-      </table>
-      
-    </section>
+  <main id="contacto">
+    <div class="ubicacion">
+      <div class="info">
+        <h2>Ubicación</h2>
+        <p>Rivadavia 345</p>
+        <p>General José de San Martín, Chaco</p>
+        <p>CP H3509</p>
+        <p>Tél. (3725) 420072</p>
+      </div>  
+    </div>
+    <div class="map">
+      <img src="../images/map.png" alt="map">  
+    </div>
   </main>
-  <footer>
-    <hr>
-    <br>
+  <footer id="footer">
     <p><strong>&copy; Copyright 2020 - Consultorio Radiológico &reg;</strong></p>
-    <br>
   </footer>
 </body>
 </html>
