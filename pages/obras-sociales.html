@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <title>Consultorio Radiológico</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" 
+  rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e05d4818c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <h1 class="logo">LOGO</h1>
+    <h1 class="logo"><i class="fas fa-prescription"></i></h1>
     <nav class="navbar">
       <ul>
         <li><a href="../index.html">Inicio</a></li>
@@ -17,20 +21,6 @@
         <li><a href="./contacto.html">Contacto</a></li>
       </ul>
     </nav>
-    <form name="form-search" method="get" class="search">
-      <input 
-        type="text" 
-        name="search_name" 
-        id="search" 
-        value="" 
-        placeholder="Search">
-      <button 
-        type="submit"
-        name="enviar_busqueda"
-        value="enviar_busqueda">
-        Search
-      </button>
-    </form>
   </header>
   <main id="obras-sociales">
     <h1>Obras Sociales</h1>
@@ -599,9 +589,16 @@
       </tbody> 
     </table>
   </main>
-  <br>
-  <footer id="footer">
-    <p><strong>&copy; Copyright 2020 - Consultorio Radiológico &reg;</strong></p>
+  <footer class="container">
+    <div class="item">
+      <p><strong><i class="far fa-copyright"></i> Copyright 2020 - Consultorio Radiológico  <i class="far fa-registered"></i> 
+      </strong></p>
+    </div>
+    <div class="item social-network">
+      <a href=""><i class="fab fa-facebook-square"></i></a>
+      <a href=""><i class="fab fa-whatsapp-square"></i></a>
+      <a href=""><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
 </body>
 </html>

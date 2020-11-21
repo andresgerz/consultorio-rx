@@ -1,4 +1,5 @@
 /*  
+
 Paleta de colores
 
 color1 = #234862
@@ -9,27 +10,21 @@ color4 = #94C0DD
 */
 
 
-/* Reset CSS */
+/* ###################### Reset CSS ###################### */                
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 
-/* Global */
-
-#footer {
-  width: 100%;
-  height: 5rem;
-}  
+html, body {
+  line-height: 1;
+  height: 100%;
+}
 
 
-#footer p {
-  margin: 2rem;
-  position: relative;
-  top: 2rem;
-}  
+/* ###################### Global ###################### */
 
 
 body {
@@ -78,74 +73,127 @@ header {
 }
 
 
-.ubicacion, .form-turno, .images-wrapper {
+.ubicacion, .form-turno {
   background-color: #357099;
   color: #fff;
 }
 
 
-.logo, .navbar, .search {
+.logo {
   float: left;
-  margin-left: 25px;
+  margin: 13px 0 0 50px;
+  border: 5px solid #fff;
 }
 
 
-.logo {
-  margin-top: 21px;
+.logo i {
+  margin: 6px;
 }
 
 
 .navbar {
-  margin-top: 25.5px;
+  margin: 25.5px 50px 0 0;
+  float: right;
 }
 
 
-.search {
-  margin-top: 30.5px;
+footer.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+}
+ 
+
+.footer p {
+  margin: 2rem;
+  position: relative;
+  top: 2rem;
+}  
+
+
+.social-network {
+  width: 91px;
+  height: 34px;
+  background-color: #fff;
+  padding: 1px 3px 0 3px;
+  border-radius: 3px;
 }
 
 
-/* Inicio */
+.fa-facebook-square {
+  color: #1878F2;
+  font-size: 2rem;
+}
+
+
+.fa-whatsapp-square {
+  color: #5BE578;
+  font-size: 2rem;
+}
+
+
+.fa-linkedin {
+  color: #0073B1;
+  font-size: 2rem;
+}
+
+
+/* ###################### Inicio ###################### */
+
 
 .main-article {
-  text-align: center;
-  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.main-article h1 {
-  margin-bottom: 2rem;
-  color: #ff2131;
+.main-information {
+  position: absolute;
+  width: 400px;
+  height: 260px;
+  background-color: #000;
+  opacity: 0.5;
 }
 
 
-.images-wrapper {
+.main-information h1 {
+  font-size: 42px;
+  color: #fff;
+  margin-top: 67px; 
+}
+
+
+.images-container {
+  display: flex;
+  flex-direction: row;
+  height: 25rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.images-container .item {
+  width: 300px;
   height: 330px;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 
-.images-wrapper article {
-  width: 18.75rem;
-  float: left;
-  padding: 0 3rem;
-}
+/* ###################### Estudios ###################### */
 
-
-.images-wrapper img {
-  text-align: center;
-}
-
-
-.images-wrapper h3 {
-  margin: 1rem;
-}
-
-
-/* Estudios  */
 
 .estudios-wrapper {
   height: 100vh;
+}
+
+
+.estudios-wrapper h1 {
+  margin-top: 40px;
 }
 
 
@@ -168,7 +216,8 @@ header {
 }
 
 
-/* Turnos  */
+/* ###################### Turnos ###################### */
+
 
 .table-turnos {
   width: 60rem;
@@ -211,7 +260,18 @@ header {
 }  
 
 
-/* Obras Sociales  */
+#turnos-main {
+  height: 1000px;
+}
+
+
+#turnos-main h1 {
+  margin: 40px 0;
+}
+
+
+/* ###################### Obras Sociales ###################### */
+
 
 #obras-sociales {
   height: 100vh;
@@ -230,10 +290,12 @@ header {
 }
 
 
-/* Contacto */
+/* ###################### Contacto ###################### */
   
   
-#contacto {
+#contacto-container {
+  display: flex;
+  justify-content: space-evenly;
   height: 100vh;
   padding: 4rem;
 }
@@ -252,11 +314,6 @@ header {
 }
 
 
-.info {
-  margin-top: 173.5px;
-}
-
-
 .ubicacion h2 {
   margin-bottom: 2rem;
 }
@@ -264,4 +321,21 @@ header {
 
 .ubicacion p {
   line-height: 2rem;
+}
+
+
+.info {
+  margin-top: 173.5px;
+}
+
+
+.info p {
+  display: inline;
+  margin-left: 5px;
+}
+
+
+.info i {
+  width: 18px;
+  text-align: center;
 }
