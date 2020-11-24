@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consultorio Radiológico</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,54 +11,56 @@
   <script src="https://kit.fontawesome.com/e05d4818c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1 class="logo"><i class="fas fa-prescription"></i></h1>
-    <nav class="navbar">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./estudios.html">Estudios</a></li>
-        <li><a href="./turnos.html">Turnos</a></li>
-        <li><a href="./obras-sociales.html">Obras Sociales</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main id="contacto-container">
-    <div class="ubicacion item">
-      <div class="info">
-        <h2>Ubicación</h2>
-        <div>
-          <i class="fas fa-road"></i>
-          <p>Rivadavia 345</p>
-        </div>
-        <div>
-          <i class="fas fa-map-marker-alt"></i>
-          <p>General José de San Martín, Chaco</p>
-        </div>
-        <div>
-          <i class="fas fa-envelope"></i>
-          <p>CP H3509</p>
-        </div>
-        <div>
-          <i class="fas fa-phone-square"></i>
-          <p>Tél. (3725) 420072</p>
-        </div>
-      </div>  
-    </div>
-    <div class="map item">
-      <img src="../images/map.png" alt="map">  
-    </div>
-  </main>
-  <footer class="container">
-    <div class="item">
-      <p><strong><i class="far fa-copyright"></i> Copyright 2020 - Consultorio Radiológico  <i class="far fa-registered"></i> 
-      </strong></p>
-    </div>
-    <div class="item social-network">
-      <a href=""><i class="fab fa-facebook-square"></i></a>
-      <a href=""><i class="fab fa-whatsapp-square"></i></a>
-      <a href=""><i class="fab fa-linkedin"></i></a>
-    </div>
-  </footer>
+  <div id="app">
+    <header id="header" class="item">
+      <h1 class="logo"><i class="fas fa-prescription"></i></h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./estudios.html">Estudios</a></li>
+          <li><a href="./turnos.html">Turnos</a></li>
+          <li><a href="./obras-sociales.html">Obras Sociales</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contacto-container" class="item">
+      <div class="ubicacion item">
+        <div class="info">
+          <h2>Ubicación</h2>
+          <div>
+            <i class="fas fa-road"></i>
+            <p>Rivadavia 345</p>
+          </div>
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p>General José de San Martín, Chaco</p>
+          </div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <p>CP H3509</p>
+          </div>
+          <div>
+            <i class="fas fa-phone-square"></i>
+            <p>Tél. (3725) 420072</p>
+          </div>
+        </div>  
+      </div>
+      <div class="map item">
+        <img src="../images/map.png" alt="map">  
+      </div>
+    </main>
+    <footer class="container item">
+      <div class="item">
+        <p><strong><i class="far fa-copyright"></i> Copyright 2020 - Consultorio Radiológico  <i class="far fa-registered"></i> 
+        </strong></p>
+      </div>
+      <div class="item social-network">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-whatsapp-square"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+  </div>  
 </body>
 </html>

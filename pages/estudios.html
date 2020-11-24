@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consultorio Radiológico</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,101 +11,73 @@
   <script src="https://kit.fontawesome.com/e05d4818c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1 class="logo"><i class="fas fa-prescription"></i></h1>
-    <nav class="navbar">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./estudios.html">Estudios</a></li>
-        <li><a href="./turnos.html">Turnos</a></li>
-        <li><a href="./obras-sociales.html">Obras Sociales</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="estudios-wrapper">
-    <h1>Información</h1>
-    <table class="table-estudios" border="1" cellspacing="5" cellpadding="5">
-      <thead>
-        <tr>
-          <th colspan="2">Estudios</th>
-          <th>Modalidad</th>
-          <th>Requisitos</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Radiografías</td>
-          <td>En general</td>
-          <td>por orden de llegada</td>
-          <td>No trear puesto objetos metalicos: pulsera, collar, joyas, etc.
-            Traer ropa sin botones ni cierres
-          </td>
-        </tr>
-        <tr>
-        <td rowspan="2">Ecografías</td>
-        <td>
-          <ul>
-            <li>Abdominal</li>
-            <li>Renal</li>
-            <li>Embarazo menor a 2 meses</li>
-            <li>Prostata</li>
-            <li>Ginecológica</li>
-            <li>Vejiga</li>
-          </ul>
-        </td>
-        <td rowspan="2">por turno</td>
-        <td rowspan="1">con ganas de orinar</td>
-        </tr>
-        <tr>
-          <td>
+  <div id="app">
+    <header id="header" class="item">
+      <h1 class="logo"><i class="fas fa-prescription"></i></h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./estudios.html">Estudios</a></li>
+          <li><a href="./turnos.html">Turnos</a></li>
+          <li><a href="./obras-sociales.html">Obras Sociales</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="estudios-wrapper item">
+      <h1>Información</h1>
+      <div class="estudios-table-container">
+        <div class="item"><p>Estudios</p></div>
+        <div class="item"><p>Estudios</p></div>
+        <div class="item"><p>Modalidad</p></div>
+        <div class="item"><p>Requisitos</p></div>
+        <div class="item"><p>Radiografías</p></div>
+        <div class="item"><p>En general</p></div>
+        <div class="item"><p>por orden de llegada</p></div>
+        <div class="item"><p>No trear puesto objetos metalicos: pulsera, collar, joyas, etc. Traer ropa sin botones ni cierres</p></div>
+        <div class="item"><p>Ecografías</p></div>
+        <div class="item">         
+          <p>
             <ul>
+              <li>Abdominal</li>
+              <li>Renal</li>
+              <li>Embarazo menor a 2 meses</li>
+              <li>Prostata</li>
+              <li>Ginecológica</li>
+              <li>Vejiga</li>
               <li>Tiroides</li>
               <li>Partes blandas</li>
               <li>Extremidades</li>
             </ul>
-          </td>
-          <td>Ninguna</td>
-        </tr>
-        <tr>
-          <td>Mamografias</td>
-          <td>En general</td>
-          <td>Por orden de llegada</td>
-          <td>----</td>
-        </tr> 
-        <tr>
-          <td>Colón por enema doble contraste</td>
-          <td>En general</td>
-          <td>Con turno a la mañana temprano</td>
-          <td>
-            lleva preparación el día anterior.
-            Comprar gastropaque f rectal sachetm limonada roge dos envases
-            buscapina simple dos ampollas
-            traer toalla y ropa sin botones
-          </td>
-        </tr> 
-        <tr>
-          <td>Seriada Esofago Gastroduodenal</td>
-          <td>En general</td>
-          <td>Con turno a la mañana temprano</td>
-          <td>Tiene que estar en ayunas
-            Comprar un contraste sulfato de bario polo-gastropaque s ezem
-            traer toalla y ropa sin botones
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </main>
-  <footer class="container">
-    <div class="item">
-      <p><strong><i class="far fa-copyright"></i> Copyright 2020 - Consultorio Radiológico  <i class="far fa-registered"></i> 
-      </strong></p>
-    </div>
-    <div class="item social-network">
-      <a href=""><i class="fab fa-facebook-square"></i></a>
-      <a href=""><i class="fab fa-whatsapp-square"></i></a>
-      <a href=""><i class="fab fa-linkedin"></i></a>
-    </div>
-  </footer>
+          </p>
+        </div>
+        <div class="item"><p>por turno</p></div>
+        <div class="item"><p>con ganas de orinar/Ninguna</p></div>
+        <div class="item"><p>Mamografias</p></div>
+        <div class="item"><p>En general</p></div>
+        <div class="item"><p>Por orden de llegada</p></div>
+        <div class="item"><p>Ninguna</p></div>
+        <div class="item"><p>Colón por enema doble contraste</p></div>
+        <div class="item"><p>En general</p></div>
+        <div class="item"><p>Con turno a la mañana temprano</p></div>
+        <div class="item"><p>lleva preparación el día anterior. Comprar gastropaque f rectal sachetm limonada roge dos envases buscapina simple dos ampollas traer toalla y ropa sin botones</p></div>
+        <div class="item"><p>Seriada Esofago Gastroduodenal</p></div>
+        <div class="item"><p>En general</p></div>
+        <div class="item"><p>Con turno a la mañana temprano</p></div>
+        <div class="item"><p>Tiene que estar en ayunas Comprar un contraste sulfato de bario polo-gastropaque s ezem traer toalla y ropa sin botones</p></div>
+      </div>
+    </main>
+    <footer class="container item">
+      <div class="item">
+        <p><strong><i class="far fa-copyright"></i> Copyright 2020 - Consultorio Radiológico  <i class="far fa-registered"></i> 
+        </strong></p>
+      </div>
+      <div class="item social-network">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-whatsapp-square"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+  </div> 
 </body>
 </html>
