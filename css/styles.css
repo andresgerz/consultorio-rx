@@ -54,17 +54,15 @@ main.item {
 }
 
 
-#footer.item {
+#footer {
   grid-area: footer;
 }
 
 
 #app {
   display: grid;
-  height: 100vh;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-template-rows: 80px auto 80px;
-  grid-auto-columns: auto;
   grid-template-areas: 
   "header"
   "main"
@@ -73,14 +71,11 @@ main.item {
 }
 
 
-.navbar ul li {
+.navbar ul.container {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-}
-
-
-.navbar ul li {
-  float: left;
-  margin-right: 25px;
 }
 
 
@@ -88,6 +83,12 @@ main.item {
   color: #fff;
   font-size: 24px;
   text-decoration: none;
+}
+
+
+.navbar ul li a:hover {
+  color: #5196C6;
+  text-decoration: underline;
 }
 
 
@@ -107,6 +108,37 @@ main.item {
   margin: 13px 0 0 50px;
   border: 5px solid #fff;
 }
+ 
+
+.logo:hover {  
+  animation-name: logo_effect;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+@keyframes logo_effect {
+  0% {
+    color: #234862;
+    border: 1px solid #234862;
+  }
+
+  25% {
+    color: #357099;
+    border: 3px solid #357099;
+  }
+
+  50% {
+    color: #5196C6;
+    border: 4px solid #5196C6;
+  }
+
+  75% {
+    color: #fff;
+    border: 5px solid #fff;
+  }
+}
 
 
 .logo i {
@@ -120,12 +152,16 @@ main.item {
 }
 
 
+.navbar i {
+  display: none;
+}
+
+
 footer.container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 5rem;
 }
  
 
@@ -142,6 +178,11 @@ footer.container {
   background-color: #fff;
   padding: 1px 3px 0 3px;
   border-radius: 3px;
+}
+
+
+.social-network i:hover {
+  transform: scale(1.3);
 }
 
 
@@ -175,24 +216,43 @@ footer.container {
 
 .main-information {
   position: absolute;
-  width: 400px;
-  height: 260px;
-  background-color: #000;
-  opacity: 0.5;
+  width: 40%;  
+  opacity: 0.5; 
+  animation-name: info_effect;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+
+@keyframes info_effect {
+ 
+  0% {
+    background-color: #94C0DD;  
+  }
+
+  50% {
+    background-color: #357099;
+  }
+
+  100% {
+    background-color: #234862;
+  }
 }
 
 
 .main-information h1 {
+  margin: 3rem;
   font-size: 42px;
   color: #fff;
-  margin-top: 67px; 
 }
 
 
 .images-container {
   display: flex;
   flex-direction: row;
-  height: 25rem;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -204,6 +264,12 @@ footer.container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 25px;
+}
+
+
+.images-container .item:hover {
+  transform: scale(1.1);
 }
 
 
@@ -229,6 +295,13 @@ footer.container {
   background-color: #5196C6;
   text-align: center;
   display: grid;
+}
+
+
+.estudios-table-container .item:hover {
+  background-color: #357099;
+  transform: scale(1.05);
+  color: #fff;
 }
 
 
@@ -273,6 +346,13 @@ footer.container {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+
+.turnos-table-container .item:hover {
+  background-color: #357099;
+  transform: scale(1.05);
+  color: #fff;
 }
 
 
@@ -334,6 +414,13 @@ footer.container {
 }
 
 
+.obras-sociales-table .item:hover {
+  background-color: #357099;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+
 .obras-sociales-table h4 {
   margin: 1rem 0 2rem 0;
 }
@@ -387,4 +474,68 @@ footer.container {
 .info i {
   width: 18px;
   text-align: center;
+}
+
+
+/* ###################### media queries ###################### */
+
+
+@media (max-width: 815px) {
+  
+  #app {
+    grid-template-rows: 280px auto 80px;
+  }
+
+
+  .navbar ul.container {
+    display: none;
+  }
+
+
+  nav.navbar:hover ul.container {
+    position: absolute;
+    right: 150px;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    list-style: none;
+  }
+  
+  
+  ul.container li a:hover {
+    background-color: #94C0DD;
+    text-decoration: none;
+  }
+
+
+  .navbar ul.container li.item {
+    float: left;
+  }
+
+
+  .navbar i {
+    margin-right: 50px;
+    display: inline-block;
+    font-size: 40px;  
+  }
+
+
+  .main-information h1 {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 510px) {
+  
+  #footer .item:nth-child(1) {
+    display: none;
+  }
+
+
+  .main-information {
+    width: 100%;
+  }
 }
