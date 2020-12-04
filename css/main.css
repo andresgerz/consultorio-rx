@@ -95,6 +95,21 @@ h1, h2, h3, h4, h5, h6 {
 #header .navbar-button {
   border-color: rgba(0, 0, 0, 0.5); }
 
+/* 
+.sub-icon-lines svg {
+  width: 150px;
+  height: 5px;
+}
+
+.sub-icon-lines i {
+  color: $color1;
+}
+
+.sub-icon-lines svg line {
+  stroke: $color1; 
+  opacity: 0.5;
+  stroke-width: 5px;
+} */
 /* ###################### Inicio ###################### */
 .main-article {
   align-items: center;
@@ -175,6 +190,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0 2rem 0; }
 
 /* ###################### Contacto ###################### */
+.info {
+  height: 450px; }
+
 .info p {
   display: inline;
   margin-left: 5px; }

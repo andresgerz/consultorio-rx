@@ -128,6 +128,21 @@ h1, h2, h3, h4, h5, h6 {
 #header .navbar-button {
   border-color: rgba(0,0,0,0.5);
 }
+/* 
+.sub-icon-lines svg {
+  width: 150px;
+  height: 5px;
+}
+
+.sub-icon-lines i {
+  color: $color1;
+}
+
+.sub-icon-lines svg line {
+  stroke: $color1; 
+  opacity: 0.5;
+  stroke-width: 5px;
+} */
 
 /* ###################### Inicio ###################### */
 
@@ -217,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .obras-sociales-table .item {
   background-color: $color3;
-  text-align: center;
+  text-align: center; 
 }
 
 .obras-sociales-table .item ul {
@@ -236,6 +251,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ###################### Contacto ###################### */
+
+.info {
+  height: 450px;
+}
 
 .info p {
   display: inline;
