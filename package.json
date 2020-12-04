@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x\" npm run build-css\" "
+    "watch-css": "nodemon -e scss -x \" npm run build-css\"",
+    "css-autoprefixer": ""
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,9 @@
   },
   "homepage": "https://github.com/andresgerz/consultorio_rx-gerzenstein#readme",
   "devDependencies": {
+    "autoprefixer": "^10.0.4",
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "postcss-cli": "^8.3.0"
   }
 }

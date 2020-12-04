@@ -34,7 +34,7 @@
         <div class="align-self-center">
           <nav class="navbar navbar-expand-lg navbar-light">
             <button 
-            class="navbar-toggler align-self-center" 
+            class="navbar-toggler align-self-center navbar-button" 
             type="button" 
             data-toggle="collapse" 
             data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
@@ -42,7 +42,7 @@
             aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="collapse navbar-collapse mini-navbar" id="navbarTogglerDemo01">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
@@ -67,6 +67,7 @@
       </div>
     </header>
     <main id="turnos-main" class="item">
+      <img src="../images/main-top.png" width="100%" alt="No image">
       <h1>Turnos</h1>
       <div class="container w-75 table-responsive">
         <table class="table table-bordered table-hover text-center consultorio-tables">
@@ -170,10 +171,10 @@
         </table>
       </div>
       <div class="container-fuild form-container mt-5">
-        <h2 class="mt-5">Reserve su turno</h2>
-        <form class="container p-5">
+        <h2>Reserve su turno</h2>
+        <form class="p-5">
           <div class="form-row">
-            <div class="form-group col-sm-6 col-md-5 col-lg-4">
+            <div class="form-group offset-1 col-10 offset-sm-2 col-sm-8  offset-md-3 col-md-3">
               <label for="inputEmail4">Nombre</label>
               <input 
                 type="text" 
@@ -181,7 +182,7 @@
                 placeholder="Luis Alberto" 
                 id="inputNombre">
             </div>
-            <div class="form-group col-sm-6 col-md-5 col-lg-4">
+            <div class="form-group offset-1 col-10 offset-sm-2 col-sm-8 offset-md-0 col-md-3">
               <label for="inputPassword4">Apellido</label>
               <input 
                 type="text" 
@@ -191,7 +192,7 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="form-group offset-1 col-10 offset-sm-2 col-sm-5     offset-md-3 col-md-3 col-lg-2">
               <label for="inputEmail4">DNI</label>
               <input 
               type="number" 
@@ -199,7 +200,7 @@
               placeholder="11222333"
               id="inputDni">
             </div>
-            <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4">
+            <div class="form-group offset-1 col-10 offset-sm-2 col-sm-8 offset-md-3 col-md-5 offset-lg-0 col-lg-4">
               <label for="inputEmail4">Email</label>
               <input 
               type="email" 
@@ -209,7 +210,7 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-4 col-sm-3 col-md-2 col-lg-1">
+            <div class="form-group offset-1 col-5 offset-sm-2 col-sm-3 offset-md-3 col-md-2 col-lg-1">
               <label for="inputPassword4">Age</label>
               <input 
                 type="number" 
@@ -217,7 +218,7 @@
                 placeholder="28"
                 id="inputAge">
             </div>
-            <div class="form-group col-7 col-sm-6 col-md-4 col-lg-2">
+            <div class="form-group offset-1 col-10 offset-sm-0 col-sm-5 offset-md-0 col-md-3 col-lg-2">
               <label for="inputPassword4">Telefono</label>
               <input 
                 type="number" 
@@ -227,7 +228,7 @@
             </div>
           </div>  
           <div class="form-row">
-            <div class="col-auto my-1 col-5 col-sm-3 col-lg-2">
+            <div class="form-group offset-1 col-9 offset-sm-2 col-sm-3 offset-md-3 col-md-2 col-lg-2">
               <label class="mr-sm-2" for="inlineFormCustomSelect1">Hora Turno</label>
               <select class="custom-select mr-sm-3" id="inlineFormCustomSelect1">
                 <option selected="selected" value="0">Hora</option>
@@ -252,30 +253,29 @@
               <option value="19:30">19:30 hs</option>
               </select>
             </div>
-            <div class="form-group col-9 col-sm-5 col-md-3">
+            <div class="form-group offset-1 col-10 offset-sm-0 col-sm-5 col-md-3 col-lg-3">
               <label for="inputPassword4">Fecha del turno</label>
               <input type="date" class="form-control" id="inputPassword4">
             </div>
           </div>  
-          <div class="form-row align-items-center">
-          </div>  
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
+          <div class="form-row">
+            <div class="form-group offset-1 col-10 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
               </div>
             </div>
+            <div class="form-group offset-1 col-10 offset-sm-2 offset-md-3 col-md-6">
+              <button type="reset" class="btn btn-primary">Borrar Formulario</button>
+              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+            </div>  
           </div>
-          <button type="reset" class="btn btn-primary mt-2">Borrar Formulario</button>
-          <button type="submit" class="btn btn-primary mt-2 ml-5">Enviar</button>
         </form>
-        <div class="container d-flex w-100 bg-primary">
-          <div class="align-self-center"><h2>asdasd</h2></div>
-        </div>
       </div>
     </main>
     <footer id="footer" class="container-fuild footer-container item p-4">

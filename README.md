@@ -1,9 +1,6 @@
 # consultorio-rx
 
 
-### Paleta de colores
+## Start the project:
 
-#### color1 = #234862
-#### color2 = #357099
-#### color3 = #5196C6
-#### color4 = #94C0DD
+#### npm run built-watch
