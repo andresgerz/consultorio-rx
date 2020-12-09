@@ -1,0 +1,11 @@
+// Variables
+@import 'variables';
+
+// Global definitions
+@import "global/**/*";
+
+// Style guide: component - global
+@import "components/global/**/*";
+
+// Style guide: component - page
+@import "components/pages/**/*";

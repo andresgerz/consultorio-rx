@@ -1,0 +1,33 @@
+#app {
+  background-color: $color4;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center; 
+}
+
+.table-estudios, .table-turnos {
+  background-color: $color3;
+}
+
+.ubicacion, .form-container {
+  background-color: $color2;
+  color: #fff;
+}
+
+/* 
+.sub-icon-lines svg {
+  width: 150px;
+  height: 5px;
+}
+
+.sub-icon-lines i {
+  color: $color1;
+}
+
+.sub-icon-lines svg line {
+  stroke: $color1; 
+  opacity: 0.5;
+  stroke-width: 5px;
+} */

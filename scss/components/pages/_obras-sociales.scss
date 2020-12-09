@@ -1,0 +1,22 @@
+.obras-sociales-table {
+
+  .item {
+    background-color: $color3;
+    text-align: center; 
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    
+    &:hover {
+      color: #fff;
+      background-color: $color2;
+    }
+  }
+  
+  h4 {
+    margin: 1rem 0 2rem 0;
+  }
+}

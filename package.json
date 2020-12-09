@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \" npm run build-css\"",
-    "css-autoprefixer": ""
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "build:css": "npm run css & npm run css-autoprefixer",
+    "css": "cross-var node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js --output-style compressed scss/styles.scss css/main.css",
+    "css-autoprefixer": "cross-var \"postcss -u autoprefixer -r css/*\""
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,10 @@
   },
   "homepage": "https://github.com/andresgerz/consultorio_rx-gerzenstein#readme",
   "devDependencies": {
-    "autoprefixer": "^10.0.4",
-    "node-sass": "^5.0.0",
-    "nodemon": "^2.0.6",
-    "postcss-cli": "^8.3.0"
+    "autoprefixer": "^9.7.1",
+    "cross-var": "^1.1.0",
+    "node-sass": "^4.14.1",
+    "node-sass-glob-importer": "^5.3.2",
+    "postcss-cli": "^6.1.3"
   }
 }

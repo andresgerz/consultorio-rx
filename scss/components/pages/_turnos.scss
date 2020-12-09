@@ -1,0 +1,21 @@
+.consultorio-tables {
+  background-color: $color3;
+}
+
+.form-container {
+
+  .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.7);
+  }
+  
+  .form-row__button--colors {
+    background-color: $color4;
+    border-color: $color3;
+
+    &:focus {
+      background-color: #fff;
+      border-color: #fff;
+    }
+  }
+  
+}

@@ -1,0 +1,77 @@
+.logo {
+  border: 5px solid #fff;
+  color: #fff;
+  float: left;
+  height: 62px;
+  margin-top: 10px;
+
+  i {
+    margin: 6px;
+  }
+
+  &:hover {  
+    animation-name: logo_effect;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+  }
+}
+
+@keyframes logo_effect {
+  0% {
+    border: 0.1px solid rgba(255, 255, 255, 0.26);
+    color: rgba(255, 255, 255, 0.26);
+  }
+
+  25% {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    border: 4px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  75% {
+    border: 5px solid #fff;
+    color: #fff;
+  }
+}
+
+#header {
+  background-color: rgba(255, 255, 255, 0.26);
+  position: absolute;
+  width: 100%;
+  z-index: 999  ;
+  
+  .navbar__button--border {
+    border-color: rgba(0,0,0,0.5);
+  }
+}
+
+.navbar-light .navbar-nav a.nav-link {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+
+  &:hover {
+    color: $color1;
+    text-decoration: underline;
+  }
+}
+
+/* ###################### media queries ###################### */
+
+@media (max-width: 992px) {
+  
+  .mini-navbar {
+    background-color: $color3;
+    border-radius: 5px;
+  }
+
+  .mini-navbar li.nav-item a.nav-link:hover {
+    background-color: $color3;
+  }
+}
