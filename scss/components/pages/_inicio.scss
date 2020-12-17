@@ -14,18 +14,15 @@
 }
 
 @keyframes info_effect {
- 
-  0% {
-    background-color: $color4;  
+  $colors: ("0%": $color1, "25%": $color2, "50": $color3, "75": $color4);
+
+  @each $percentage,$color in $colors {
+
+    #{$percentage} {
+      background-color: $color;  
+    }
   }
 
-  50% {
-    background-color: $color2;
-  }
-
-  100% {
-    background-color: $color1;
-  }
 }
 
 .about-us {

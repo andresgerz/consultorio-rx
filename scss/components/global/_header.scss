@@ -19,24 +19,14 @@
 }
 
 @keyframes logo_effect {
-  0% {
-    border: 0.1px solid rgba(255, 255, 255, 0.26);
-    color: rgba(255, 255, 255, 0.26);
-  }
+  $logo_map: (0: 0, 25: 2, 50: 4, 75: 6);
 
-  25% {
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.5);
-  }
+  @each $percentage, $border in $logo_map {
 
-  50% {
-    border: 4px solid rgba(255, 255, 255, 0.75);
-    color: rgba(255, 255, 255, 0.75);
-  }
-
-  75% {
-    border: 5px solid #fff;
-    color: #fff;
+    #{$percentage+"%"} {
+      border: $border+"px" solid rgba(255, 255, 255, $percentage/10);
+      color: rgba(255, 255, 255, $percentage/10);
+    }
   }
 }
 
