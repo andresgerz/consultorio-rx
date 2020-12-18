@@ -27,81 +27,78 @@
 <body>
   <div id="app">
     <header id="header" class="container-fuild item">
-      <div class="d-flex justify-content-between ml-4">
-        <div>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
           <h1 class="logo"><i class="fas fa-prescription"></i></h1>
-        </div>
-        <div class="align-self-center">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <button 
-            class="navbar-toggler align-self-center navbar__button--border" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mini-navbar" id="navbarTogglerDemo01">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./estudios.html">Estudios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./turnos.html">Turnos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./obras-sociales.html">Obras Sociales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-              </ul>
-              </form>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main id="contacto-main">
-      <div>
-        <img src="../images/contact-us-comp.jpg" width="100%" alt="No image">
-        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-          <ol class="breadcrumb breadcrumb--color">
-            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
-          </ol>
-        </nav>
-        <div class="container-fuild contacto">
-          <div class="row text-center info no-gutters align-items-center">
-            <div class="col-12 col-md-12 col-lg-4">
-              <h1>Contacto</h1>
-              <div>
-                <i class="fas fa-road"></i>
-                <p>Rivadavia 345</p>
-              </div>
-              <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <p>General José de San Martín, Chaco</p>
-              </div>
-              <div>
-                <i class="fas fa-envelope"></i>
-                <p>CP H3509</p>
-              </div>
-              <div>
-                <i class="fas fa-phone-square"></i>
-                <p>Tél. (3725) 420072</p>
-              </div>
-            </div>  
-            <div class="col-12 col-md-12 col-lg-8 text-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.0038737011914!2d-59.34230890153802!3d-26.536827175169588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944389f10236d779%3A0x479af8c6d57f6f5d!2sCONSULTORIO%20RADIOL%C3%93GICO%20Valentin%20Gerzenstein!5e0!3m2!1sen!2sar!4v1606920776989!5m2!1sen!2sar" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mini-navbar" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-md-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./estudios.html">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./turnos.html">Turnos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./obras-sociales.html">Obras Sociales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+  </header>
+    <main id="contacto-main">
+      <section>
+        <div>
+          <img src="../images/contact-us-comp.jpg" width="100%" alt="No image">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb--color">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+              </ol>
+            </nav>
+            <div class="container-fuild contacto">
+              <div class="row text-center info no-gutters align-items-center">
+                <div class="col-12 col-md-12 col-lg-4">
+                  <h1>Contacto</h1>
+                  <div>
+                    <i class="fas fa-road"></i>
+                    <p>Rivadavia 345</p>
+                  </div>
+                  <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>General José de San Martín, Chaco</p>
+                  </div>
+                  <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>CP H3509</p>
+                  </div>
+                  <div>
+                    <i class="fas fa-phone-square"></i>
+                    <p>Tél. (3725) 420072</p>
+                  </div>
+                </div>  
+                <div class="col-12 col-md-12 col-lg-8 text-center">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.0038737011914!2d-59.34230890153802!3d-26.536827175169588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944389f10236d779%3A0x479af8c6d57f6f5d!2sCONSULTORIO%20RADIOL%C3%93GICO%20Valentin%20Gerzenstein!5e0!3m2!1sen!2sar!4v1606920776989!5m2!1sen!2sar" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
     </main>
     <footer id="footer" class="container-fuild footer-container item p-4">
       <div class="d-flex justify-content-around no-gutters">

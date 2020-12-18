@@ -14,7 +14,7 @@
 }
 
 @keyframes info_effect {
-  $colors: ("0%": $color1, "25%": $color2, "50": $color3, "75": $color4);
+  $colors: ("25%": $color1, "50%": $color2, "75%": $color3, "100%": $color4);
 
   @each $percentage,$color in $colors {
 
