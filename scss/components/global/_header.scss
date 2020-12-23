@@ -41,7 +41,7 @@
   .navbar__button--border {
     border-color: rgba(0,0,0,0.5);
   }
-}
+ }
 
 .navbar-light .navbar-nav a.nav-link {
   color: #fff;
@@ -52,6 +52,10 @@
     color: $color1;
     text-decoration: underline;
   }
+}
+
+li.nav-item.active .navbar-nav__activate--color {
+  color: $color2;
 }
 
 /* ###################### media queries ###################### */
