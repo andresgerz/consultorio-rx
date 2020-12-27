@@ -14,9 +14,36 @@
       color: #fff;
       background-color: $color2;
     }
+
+    .top-return {
+      color: #000;
+    }
+
+    .top-return:hover {
+      color: $color1;
+    }
+    /* a.top-return {
+      display: none;
+    } */
   }
   
   h4 {
     margin: 3rem 0 2rem 0;
+  }
+}
+
+.sub-navbar-wrapper {
+  background-color: $color3;
+
+  .sub-navbar {
+
+    a {
+      background-color: $color2;
+      margin: 5px;
+    }
+
+    a:hover {
+      background-color: $color1;
+    }
   }
 }
