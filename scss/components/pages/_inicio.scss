@@ -1,14 +1,9 @@
 .main-information {
-  animation-name: info_effect;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
-  animation-delay: 0s;
+  @include animations(info_effect,infinite,ease-in,2s,0s);
   opacity: 0.5; 
   
   .main-information__title {
-    color: #fff;
-    font-size: 42px;
+    @include texts(#fff,42px);
     margin: 1rem;
   }
 }
@@ -26,8 +21,7 @@
 }
 
 .about-us {
-  background-color: $color2;
-  color: #fff;
+  @include colors($color2,#fff);
 }
 
 .main-title {

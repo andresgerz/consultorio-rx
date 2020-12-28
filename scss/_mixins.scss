@@ -1,0 +1,17 @@
+@mixin animations($name,$iteration,$timing,$duration,$delay) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-iteration-count: $iteration;
+  animation-name: $name;
+  animation-timing-function: $timing;
+}
+
+@mixin colors($c1,$c2) {
+  background-color: $c1;
+  color: $c2;
+}
+
+@mixin texts($color,$fs) {
+  color: $color;
+  font-size: $fs;
+}

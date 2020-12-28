@@ -10,25 +10,21 @@
   }
   
   .social-network__facebook--color {
-    color: $color-facebook;
-    font-size: 2rem;
+    @include texts($color-facebook,2rem);
   }
   
   .social-network__whatsapp--color {
-    color: $color-whatsapp;
-    font-size: 2rem;
+    @include texts($color-whatsapp,2rem);
   }
   
   .social-network__linkedin--color {
-    color: $color-linkedin;
-    font-size: 2rem;
+    @include texts($color-linkedin,2rem);
   }
 }
 
 #footer {
-  background-color: $color1;
-  color: #fff;
-  
+  @include colors($color1,#fff);
+
   p {
     margin: 10.5px 0;
   }

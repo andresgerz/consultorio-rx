@@ -12,8 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contacto, .form-container {
-  background-color: $color2;
-  color: #fff;
+  @include colors($color2,#fff);
 }
 
 .sub-icon-lines svg {
@@ -32,8 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 .breadcrumb--color {
-  background-color: $color1;
-  color: #fff;
+  @include colors($color1,#fff);
   margin-bottom: 0;
 
   a {

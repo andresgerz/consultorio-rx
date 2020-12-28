@@ -11,8 +11,7 @@
     }
     
     &:hover {
-      color: #fff;
-      background-color: $color2;
+      @include colors($color2,#fff);
     }
   }
   
