@@ -10,11 +10,7 @@
   }
 
   &:hover {  
-    animation-name: logo_effect;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-    animation-delay: 0s;
+    @include animations(logo_effect,1,ease-in,2s,0s);
   }
 }
 
@@ -44,8 +40,7 @@
  }
 
 .navbar-light .navbar-nav a.nav-link {
-  color: #fff;
-  font-size: 24px;
+  @include texts(#fff,24px);
   text-decoration: none;
 
   &:hover {

@@ -1,8 +1,10 @@
 // Variables
-@import 'variables';
+@import "variables";
 
 // Global definitions
 @import "global/**/*";
+
+@import "mixins";
 
 // Style guide: component - global
 @import "components/global/**/*";

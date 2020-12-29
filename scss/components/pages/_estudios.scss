@@ -6,8 +6,7 @@
     background-color: $color3;
 
     &:hover {
-      background-color: $color2;
-      color: #fff;
+      @include colors($color2,#fff);
       transform: scale(1.05);
     }
   }
