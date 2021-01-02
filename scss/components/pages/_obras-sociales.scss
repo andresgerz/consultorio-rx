@@ -12,18 +12,20 @@
     
     &:hover {
       @include colors($color2,#fff);
+      
+      .top-return {
+        visibility: visible;
+      }
     }
 
     .top-return {
       color: #000;
+      visibility: hidden;
     }
 
     .top-return:hover {
       color: $color1;
     }
-    /* a.top-return {
-      display: none;
-    } */
   }
   
   h4 {
@@ -35,6 +37,7 @@
   background-color: $color3;
 
   .sub-navbar {
+    list-style: none;
 
     a {
       background-color: $color2;
