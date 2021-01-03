@@ -22,48 +22,59 @@
     <!-- My styles -->
     <link rel="stylesheet" href="../css/main.css">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../css/animate.css" >
+
   </head>
   <body>
     <div id="app">
       <header id="header" class="container-fuild item">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container">
-              <h1 class="logo">
-                <i class="fas fa-prescription"></i>
-              </h1>
-              <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse mini-navbar" id="navbarTogglerDemo01">
-                <ul class="navbar-nav ml-md-auto text-center">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../index.html">
-                      Inicio
-                      <span class="sr-only">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./estudios.html">Estudios</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="./turnos.html">Turnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./obras-sociales.html">Obras Sociales</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container">
+            <h1 class="logo">
+              <i class="fas fa-prescription"></i>
+            </h1>
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-toggle="collapse" 
+              data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mini-navbar" id="navbarTogglerDemo01">
+              <ul class="navbar-nav ml-md-auto text-center">
+                <li class="nav-item">
+                  <a class="nav-link" 
+                    href="../index.html">Inicio
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" 
+                    href="./estudios.html">Estudios
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" 
+                    href="./turnos.html">Turnos
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" 
+                    href="./obras-sociales.html">Obras Sociales
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" 
+                    href="./contacto.html">Contacto
+                  </a>
+                </li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
       </header>
       <main id="turnos-main" class="item">
         <section>
@@ -82,7 +93,7 @@
             </ol>
           </nav>
           <div class="container mb-5">
-            <h1 class="m-5">Turnos</h1>
+            <h1 class="m-5 wow pulse">Turnos</h1>
           <div class="container w-75 table-responsive">
             <table class="table table-bordered table-hover text-center consultorio-tables">
               <thead>
@@ -243,7 +254,9 @@
               </div>  
               <div class="form-row">
                 <div class="form-group offset-1 col-9 offset-sm-2 col-sm-3 offset-md-3 col-md-2 col-lg-2">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect1">Hora Turno</label>
+                  <label class="mr-sm-2" 
+                    for="inlineFormCustomSelect1">Hora Turno
+                  </label>
                   <select class="custom-select mr-sm-3" id="inlineFormCustomSelect1">
                     <option selected="selected" value="0">Hora</option>
                     <option value="">--- Mañana ---</option>
@@ -264,7 +277,7 @@
                     <option value="18:00">18:00 hs</option>
                     <option value="18:30">18:30 hs</option>
                     <option value="19:00">19:00 hs</option>
-                  <option value="19:30">19:30 hs</option>
+                    <option value="19:30">19:30 hs</option>
                   </select>
                 </div>
                 <div class="form-group offset-1 col-10 offset-sm-0 col-sm-5 col-md-3 col-lg-3">
@@ -338,6 +351,12 @@
     <!-- Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency) -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
     </script>
+
+     <!-- Wow JS -->
+     <script src="../js/wow.min.js"></script>
+     <script>
+       new WOW().init();
+     </script>
 
   </body>
 </html>

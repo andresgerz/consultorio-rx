@@ -1,6 +1,11 @@
 # consultorio-rx
 
+Web app: Bootstrap and SASS
 
-## Start the project:
 
-#### npm run built-watch
+## 1) Install dependencies:
+    npm i
+
+
+## 2) Built scss
+    npm run watch:css
