@@ -1,81 +1,36 @@
-.obras-sociales-table {
+.menu-filter {
+  text-align:center;
+  
+  .menu-filter__button--colors {
+    border-color: $color1;
+    color: $color1;
+  }
 
-  .item {
-    background-color: $color3;
-    text-align: center;
+  .menu-filter__button--colors:hover {
+    @include colors($color1, #fff);
+  }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
-    
-    &:hover {
-      @include colors($color2,#fff);
-      
-      .top-return {
-        visibility: visible;
-      }
-    }
+  ul li{
+    display:inline-block;
+    margin:0;
+    list-style:none;
+    padding:10px 15px;
+    cursor:pointer;
+    -webkit-transition:all 05s ease;
+    -moz-transition:all 05s ease;
+    -ms-transition:all 05s ease;
+    -o-transition:all 05s ease;
+    transition:all .5s ease;
 
-    .top-return {
-      color: #000;
-      visibility: hidden;
-    }
-
-    .top-return:hover {
-      color: $color1;
-    }
   }
   
-  h4 {
-    margin: 3rem 0 2rem 0;
-  }
 }
 
-.sub-navbar-wrapper {
-  background-color: $color3;
-
-  .sub-navbar {
-    list-style: none;
-
-    a {
-      background-color: $color2;
-      margin: 5px;
-    }
-
-    a:hover {
-      background-color: $color1;
-    }
-  }
-}
-
-
-.gallery-items .item {
-  float: left;
-  margin-bottom: 10px;
-}
-
-.portfolio-menu{
-	text-align:center;
-}
-.portfolio-menu ul li{
-	display:inline-block;
-	margin:0;
-	list-style:none;
-	padding:10px 15px;
-	cursor:pointer;
-	-webkit-transition:all 05s ease;
-	-moz-transition:all 05s ease;
-	-ms-transition:all 05s ease;
-	-o-transition:all 05s ease;
-	transition:all .5s ease;
-}
-
-.portfolio-item{
+.gallery-wrapper {
 	/*width:100%;*/
 }
-.portfolio-item .item{
+
+.gallery-wrapper .item{
 	/*width:303px;*/
 	float:left;
 	margin-bottom:10px;
