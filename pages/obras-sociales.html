@@ -24,181 +24,179 @@
     <link rel="stylesheet" href="../css/animate.css" >
 
   </head>
-  <body>
-    <div id="app">
-      <header id="header" class="container-fuild item">
-        <nav class="navbar navbar-expand-md navbar-light">
+  <body id="app">
+    <header id="header" class="container-fuild item">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <h1 class="logo">
+            <i class="fas fa-prescription"></i>
+          </h1>
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mini-navbar" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-md-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" 
+                  href="../index.html">Inicio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" 
+                  href="./estudios.html">Estudios
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" 
+                  href="./turnos.html">Turnos
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link navbar-nav__activate--color" 
+                  href="./obras-sociales.html">Obras Sociales
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" 
+                  href="./contacto.html">Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="obras-sociales-main">
+      <section>
+        <div>
+          <img class="filter-images" 
+            src="../images/medical-insurance-comp.jpg" 
+            width="100%" 
+            alt="No image">
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--color">
+              <li class="breadcrumb-item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active" 
+                aria-current="page">Obras Sociales
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div>
+          <div>
+            <h1 class="m-5 wow pulse" id="az">Obras Sociales</h1>
+          </div>
           <div class="container">
-            <h1 class="logo">
-              <i class="fas fa-prescription"></i>
-            </h1>
-            <button 
-              class="navbar-toggler" 
-              type="button" 
-              data-toggle="collapse" 
-              data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mini-navbar" id="navbarTogglerDemo01">
-              <ul class="navbar-nav ml-md-auto text-center">
-                <li class="nav-item">
-                  <a class="nav-link" 
-                    href="../index.html">Inicio
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" 
-                    href="./estudios.html">Estudios
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" 
-                    href="./turnos.html">Turnos
-                  </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link navbar-nav__activate--color" 
-                    href="./obras-sociales.html">Obras Sociales
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" 
-                    href="./contacto.html">Contacto
-                  </a>
-                </li>
-              </ul>
+            <div class="menu-filter mt-2 mb-4">
+                <ul>
+                  <li class="btn menu-filter__button--colors" data-filter="*">Todas</li>
+                  <li class="btn menu-filter__button--colors" data-filter=".provinciales">Provinciales</li>
+                  <li class="btn menu-filter__button--colors" data-filter=".nacionales">Nacionales</li>
+                </ul>
             </div>
-          </div>
-        </nav>
-      </header>
-      <main id="obras-sociales-main">
-        <section>
-          <div>
-            <img class="filter-images" 
-              src="../images/medical-insurance-comp.jpg" 
-              width="100%" 
-              alt="No image">
-            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-              <ol class="breadcrumb breadcrumb--color">
-                <li class="breadcrumb-item">
-                  <a href="../index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item active" 
-                  aria-current="page">Obras Sociales
-                </li>
-              </ol>
-            </nav>
-          </div>
-          <div>
-            <div>
-              <h1 class="m-5 wow pulse" id="az">Obras Sociales</h1>
-            </div>
-            <div class="container">
-              <div class="menu-filter mt-2 mb-4">
-                 <ul>
-                    <li class="btn menu-filter__button--colors" data-filter="*">Todas</li>
-                    <li class="btn menu-filter__button--colors" data-filter=".provinciales">Provinciales</li>
-                    <li class="btn menu-filter__button--colors" data-filter=".nacionales">Nacionales</li>
-                 </ul>
-              </div>
-              <div class="gallery-wrapper row">
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/acasalud-interna-comp-align.jpg" alt="No Image">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/galeno-comp-align.jpg">
-                 </div>
-                 <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/insssep-comp-align.jpg" alt="No Image">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/jerarquicos-comp-align.jpg">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/Logo_OSDE_wikipedia-comp-align.jpg">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/osecac-comp-align.jpg">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/pami-comp-align.jpg" alt="No Image">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/sancor-salud-comp-align.jpg" alt="No Image">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/osprera-comp-align.jpg" alt="No Image">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/swiss-medical-comp-align.jpg" alt="No Image">
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="../images/obras-sociales/osplad-obra-social-logo-comp-align.jpg" alt="No Image">
-                 </div>
-                 <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
-                    </a>
-                 </div>
-                 <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
-                    </a>
-                 </div>
-                 <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
-                    </a>
-                 </div>
-                 <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
-                    </a>
-                 </div>
-                 <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
-                    </a>
-                 </div>
-              </div>
-           </div>
-          </div>
-        </section>    
-      </main>
-      <footer id="footer" class="container-fuild footer-container item p-4">
-        <div class="d-flex justify-content-around no-gutters">
-          <div class="align-self-center">
-            <p>
-              <strong>
-                <i class="far fa-copyright"></i> 
-                Copyright 2020 - Consultorio Radiológico  
-                <i class="far fa-registered"></i> 
-              </strong>
-            </p>
-          </div>
-          <div class="align-self-center">
-            <div class="social-network m-1">
-              <a href="">
-                <i class="fab fa-facebook-square social-network__facebook--color">
-                </i>
-              </a>
-              <a href="">
-                <i class="fab fa-whatsapp-square social-network__whatsapp--color">
-                </i>
-              </a>
-              <a href="">
-                <i class="fab fa-linkedin social-network__linkedin--color">
-                </i>
-              </a>
+            <div class="gallery-wrapper row">
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/acasalud-interna-comp-align.jpg" alt="No Image">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/galeno-comp-align.jpg">
+                </div>
+                <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/insssep-comp-align.jpg" alt="No Image">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/jerarquicos-comp-align.jpg">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/Logo_OSDE_wikipedia-comp-align.jpg">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/osecac-comp-align.jpg">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/pami-comp-align.jpg" alt="No Image">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/sancor-salud-comp-align.jpg" alt="No Image">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/osprera-comp-align.jpg" alt="No Image">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/swiss-medical-comp-align.jpg" alt="No Image">
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <img class="img-fluid" src="../images/obras-sociales/osplad-obra-social-logo-comp-align.jpg" alt="No Image">
+                </div>
+                <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
+                  </a>
+                </div>
+                <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
+                  </a>
+                </div>
+                <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
+                  </a>
+                </div>
+                <div class="item nacionales col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
+                  </a>
+                </div>
+                <div class="item provinciales col-lg-3 col-md-4 col-6 col-sm">
+                  <a href="../images/obras-sociales/250x156.png" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="../images/obras-sociales/250x156.png" alt="No Image">
+                  </a>
+                </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-      
+      </section>    
+    </main>
+    <footer id="footer" class="container-fuild footer-container item p-4">
+      <div class="d-flex justify-content-around no-gutters">
+        <div class="align-self-center">
+          <p>
+            <strong>
+              <i class="far fa-copyright"></i> 
+              Copyright 2020 - Consultorio Radiológico  
+              <i class="far fa-registered"></i> 
+            </strong>
+          </p>
+        </div>
+        <div class="align-self-center">
+          <div class="social-network m-1">
+            <a href="">
+              <i class="fab fa-facebook-square social-network__facebook--color">
+              </i>
+            </a>
+            <a href="">
+              <i class="fab fa-whatsapp-square social-network__whatsapp--color">
+              </i>
+            </a>
+            <a href="">
+              <i class="fab fa-linkedin social-network__linkedin--color">
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
     <!-- jQuery -->
     <script src="../js/jquery.slim.min.js"></script>
 
