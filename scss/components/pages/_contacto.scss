@@ -1,16 +1,26 @@
 .info {
-
+  text-align: center;
+  
   p {
     display: inline;
     margin-left: 5px;
   }
 
   i {
-    text-align: center;
     width: 18px;
   }
 }
 
 #contacto-main .breadcrumb--margin {
   margin-bottom: 0;
+}
+
+.form-wrapper {
+
+  input, textarea {
+
+    &:hover {
+      background-color: $color-form;
+    }
+  }
 }
