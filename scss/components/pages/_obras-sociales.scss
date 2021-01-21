@@ -35,3 +35,65 @@
 	float:left;
 	margin-bottom:10px;
 }
+
+
+
+/* Circle */
+.img-animation figure {
+	position: relative;
+}
+.img-animation figure::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+  height: 0;
+  background: rgba(81, 150, 198, 0.2);
+  opacity: 0.2;;
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.img-animation figure:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+
+figure {
+	width: 250px;
+	height: 156px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
