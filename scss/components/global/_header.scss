@@ -29,17 +29,22 @@
 }
 
 #header {
-  background-color: rgba(255, 255, 255, 0.26);
   position: absolute;
   width: 100%;
   z-index: 999;
-  
+  height: 100%;
+
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.26);
+
+  } 
+
   .navbar__button--border {
     border-color: rgba(0,0,0,0.5);
   }
  }
 
-.navbar-light .navbar-nav a.nav-link {
+/* .navbar-light .navbar-nav a.nav-link {
   @include texts(#fff,24px);
   text-decoration: none;
 
@@ -48,10 +53,10 @@
     text-decoration: underline;
   }
 }
-
-li.nav-item.active .navbar-nav__activate--color {
+ */
+/* li.nav-item.active .navbar-nav__activate--color {
   color: $color2;
-}
+} */
 
 /* ###################### media queries ###################### */
 
@@ -66,4 +71,77 @@ li.nav-item.active .navbar-nav__activate--color {
       background-color: $color3;
     }
   }
+}
+
+
+
+.navbar-animation {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar-animation * {
+  box-sizing: border-box;
+}
+.navbar-animation li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+}
+.navbar-animation a {
+  padding: 0.6em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.navbar-animation a:before,
+.navbar-animation a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.navbar-animation a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #2980b9;
+}
+.navbar-animation a:after {
+  left: 0;
+  top: 2px;
+  padding: 0.5em 0 0 0.5em;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.navbar-animation a:hover:before,
+.navbar-animation .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.navbar-animation a:hover:after,
+.navbar-animation .current a:after {
+  max-width: 100%;
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
 }
