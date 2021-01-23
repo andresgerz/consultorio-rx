@@ -3,7 +3,7 @@
   color: #fff;
   float: left;
   height: 62px;
-  margin-top: 10px;
+  margin: 0 0 0 32px;
 
   i {
     margin: 6px;
@@ -35,45 +35,18 @@
   height: 100%;
 
   .navbar {
-    background-color: rgba(255, 255, 255, 0.26);
-
+    background-color: rgba(255, 255, 255, 0.5);
   } 
-
-  .navbar__button--border {
-    border-color: rgba(0,0,0,0.5);
-  }
- }
-
-/* .navbar-light .navbar-nav a.nav-link {
-  @include texts(#fff,24px);
-  text-decoration: none;
-
-  &:hover {
-    color: $color1;
-    text-decoration: underline;
-  }
 }
- */
-/* li.nav-item.active .navbar-nav__activate--color {
-  color: $color2;
-} */
 
+#header ul li a {
+  color: #000;
+} 
+
+#header ul li a.active--color {
+  color: #fff;
+}
 /* ###################### media queries ###################### */
-
-@media (max-width: 767px) {
-  
-  .mini-navbar {
-    background-color: $color3;
-    border-radius: 5px;
-    opacity: 0.75;
-    
-    li.nav-item a.nav-link:hover {
-      background-color: $color3;
-    }
-  }
-}
-
-
 
 .navbar-animation {
   text-align: center;
@@ -90,8 +63,8 @@
   padding: 0;
 }
 .navbar-animation a {
-  padding: 0.6em 0;
-  color: rgba(255, 255, 255, 0.5);
+  padding: 0.55em 0;
+  color: #000;
   position: relative;
   letter-spacing: 1px;
   text-decoration: none;
@@ -102,24 +75,19 @@
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.navbar-animation a:before {
-  bottom: 0;
-  display: block;
-  height: 3px;
-  width: 0%;
-  content: "";
-  background-color: #2980b9;
-}
+
 .navbar-animation a:after {
-  left: 0;
-  top: 2px;
-  padding: 0.5em 0 0 0.5em;
+  right: 8px;
+  top: 1px;
+  padding: 0.5em 0;
   position: absolute;
   content: attr(data-hover);
-  color: #ffffff;
+  color: #fff;
   white-space: nowrap;
   max-width: 0%;
   overflow: hidden;
+  border-radius: 15px;
+  background-color: rgba(53, 112, 153, 0.5);
 }
 .navbar-animation a:hover:before,
 .navbar-animation .current a:before {
@@ -130,3 +98,18 @@
 .navbar-animation .current a:after {
   max-width: 100%;
 }
+
+@include media-breakpoint-down(md) { 
+  .mini-navbar ul li{
+    width: 250px;
+    margin: 0 auto;
+  }
+ 
+  .navbar-animation a:after {
+    left: 8px;
+  } 
+ }
+
+ #header .navbar__hamburger--border {
+   border: 2px solid rgba(0,0,0,0.5);
+ }
