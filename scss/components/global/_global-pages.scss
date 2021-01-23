@@ -1,9 +1,10 @@
 #app {
   background-color: $color4;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-roboto-slab;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-lato;
   text-align: center; 
 }
 
