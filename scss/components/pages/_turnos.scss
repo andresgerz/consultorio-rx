@@ -8,14 +8,19 @@
     box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.7);
   }
   
-  .form-row__button--colors {
+  .form-group__button--colors {
     background-color: $color4;
-    border-color: $color3;
+    border-color: $color4;
 
-    &:focus {
-      background-color: #fff;
-      border-color: #fff;
+    &:hover {
+      background-color: $color3;
+      border-color: $color3;
     }
-  }
-  
+
+    &:active {
+      background-color: $color1;
+      border-color: $color1;
+      color: #fff;
+    }
+  } 
 }
