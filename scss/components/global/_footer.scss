@@ -1,20 +1,3 @@
-.social-network {
-  
-
- /*  .social-network__facebook--color {
-    @include texts($color-facebook,2rem);
-  }
-   */
-   /* 
-  .social-network__whatsapp--color {
-    @include texts($color-whatsapp,2rem);
-  }
-  
-  .social-network__linkedin--color {
-    @include texts($color-linkedin,2rem);
-  } */
-}
-
 #footer {
   @include colors($color1,#fff);
 
@@ -22,15 +5,13 @@
     margin: 10.5px 0;
   }
 }
-
-
 /* Wrapper */
 .icon-button {
 	background-color: #fff;
+  border-radius: 2.8rem;
 	cursor: pointer;
 	display: inline-block;
   font-size: 2.0rem;
-  border-radius: 2.8rem;
 	height: 2.8rem;
 	line-height: 2.8rem;
 	margin: 0 5px;
@@ -42,7 +23,6 @@
 	        user-select: none;
 	width: 2.8rem;
 }
-
 /* Circle */
 .icon-button span {
 	border-radius: 0;
@@ -58,22 +38,25 @@
 	        transition: all 0.3s;
 	width: 0;
 }
+
 .icon-button:hover span {
-	width: 2.8rem;
+  border-radius: 2.8rem;
 	height: 2.8rem;
   margin: -1.4rem;
-  border-radius: 2.8rem;
+	width: 2.8rem;
 }
+
 .whatsapp span {
 	background-color: $color-whatsapp;
 }
+
 .facebook span {
 	background-color: $color-facebook;
 }
+
 .linkedin span {
 	background-color: $color-linkedin;
 }
-
 /* Icons */
 .icon-button i {
 	background: none;
@@ -94,9 +77,11 @@
 .icon-button .icon-whatsapp {
 	color: $color-whatsapp;
 }
+
 .icon-button .icon-facebook {
 	color: $color-facebook;
 }
+
 .icon-button .icon-linkedin {
 	color: $color-linkedin;
 }

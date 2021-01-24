@@ -58,15 +58,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes focus-in-expand-fwd {
 0% {
-  letter-spacing: -0.5em;
-  transform: translateZ(-800px);
   filter: blur(12px);
+  letter-spacing: -0.5em;
   opacity: 0;
+  transform: translateZ(-800px);
 }
+
 100% {
-  transform: translateZ(0);
   filter: blur(0);
   opacity: 1;
+  transform: translateZ(0);
 }
 }
 

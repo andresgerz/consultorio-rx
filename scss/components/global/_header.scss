@@ -15,11 +15,9 @@
 }
 
 @keyframes logo_effect {
-
   $logo_map: ("25%": 0.1px, "50%": 2px, "75%": 4px, "100%": 6px);
 
   @each $percentage, $border in $logo_map {
-    
     #{$percentage} {
       border: $border solid rgba(255, 255, 255, 0.5);
       color: rgba(255, 255, 255, 0.5);
@@ -45,12 +43,11 @@
 #header ul li a.active--color {
   color: #fff;
 }
-/* ###################### media queries ###################### */
 
 .navbar-animation {
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 500;
 }
 
 .navbar-animation * {
@@ -65,10 +62,10 @@
 }
 
 .navbar-animation a {
-  padding: 0.55em 0;
   color: #000;
-  position: relative;
   letter-spacing: 1px;
+  padding: 0.55em 0;
+  position: relative;
   text-decoration: none;
 }
 
@@ -80,17 +77,17 @@
 }
 
 .navbar-animation a:after {
-  right: 8px;
-  top: 1px;
-  padding: 0.5em 0;
-  position: absolute;
-  content: attr(data-hover);
+  background-color: rgba(53, 112, 153, 0.5);
+  border-radius: 15px;
   color: #fff;
-  white-space: nowrap;
+  content: attr(data-hover);
   max-width: 0%;
   overflow: hidden;
-  border-radius: 15px;
-  background-color: rgba(53, 112, 153, 0.5);
+  padding: 0.5em 0;
+  position: absolute;
+  right: 8px;
+  top: 1px;
+  white-space: nowrap;
 }
 
 .navbar-animation a:hover:before,
@@ -106,19 +103,19 @@
 
 @include media-breakpoint-down(md) { 
   .mini-navbar ul li{
-    width: 250px;
     margin: 0 auto;
+    width: 250px;
   }
  
   .navbar-animation a:after {
     left: 8px;
   } 
- }
+}
 
- #header .navbar__hamburger--border {
-   border: 2px solid rgba(0,0,0,0.5);
- }
+#header .navbar__hamburger--border {
+  border: 2px solid rgba(0,0,0,0.5);
+}
 
- #header button:hover {
-   background-color: rgba(53, 112, 153, 0.5);
- }
+#header button:hover {
+  background-color: rgba(53, 112, 153, 0.5);
+}
