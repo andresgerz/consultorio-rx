@@ -11,16 +11,12 @@
   }
 	
   ul li{
+		@include multiBrowserAnimation(transition, all .5s ease);
 		cursor:pointer;
     display:inline-block;
     list-style:none;
     margin:0;
-    padding:10px 15px;
-    -webkit-transition:all 05s ease;
-    -moz-transition:all 05s ease;
-    -ms-transition:all 05s ease;
-    -o-transition:all 05s ease;
-    transition:all .5s ease;
+		padding:10px 15px;
   }
 }
 
@@ -41,18 +37,16 @@
 		&::before {
 			@include box(0);
 			@include positions(absolute, 50%, 0, 0, 50%);
+			@include multiBrowserAnimation(transform, translate(-50%, -50%));
 			background: rgba(81, 150, 198, 0.2);
 			border-radius: 100%;
 			content: '';
 			display: block;
-			transform: translate(-50%, -50%);
-			-webkit-transform: translate(-50%, -50%);
 			z-index: 2;
 		}
 
 		&:hover::before {
-			-webkit-animation: circle .75s;
-			animation: circle .75s;
+			@include multiBrowserAnimation(animation, circle .75s);
 		}
 	}
 }

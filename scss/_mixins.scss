@@ -6,6 +6,14 @@
   animation-timing-function: $timing;
 }
 
+@mixin multiBrowserAnimation($effect,$args...) {
+  #{$effect}: $args;
+  -moz-#{$effect}: $args;
+  -ms-#{$effect}: $args;
+  -o-#{$effect}: $args;
+  -webkit-#{$effect}: $args;
+}
+
 @mixin colors($bgColor, $color) {
   background-color: $bgColor;
   color: $color;
@@ -29,22 +37,14 @@
 }
 
 @mixin box($width, $height: $width){
-  width: $width;
   height: $height;
+  width: $width;
 } 
 
 @mixin positions($position, $top, $right, $bottom, $left) {
-  position: $position;
-  top: $top;
-  right: $right;
   bottom: $bottom;
   left: $left;
+  right: $right;
+  position: $position;
+  top: $top;
 } 
-/* 
-@mixin multiBrowsers($,$time,$) {
-  transition:all .5s ease;
-  -webkit-transition:all 05s ease;
-  -moz-transition:all 05s ease;
-  -ms-transition:all 05s ease;
-  -o-transition:all 05s ease;
-} */

@@ -8,6 +8,7 @@
 /* Wrapper */
 .icon-button {
 	@include box(2.8rem);
+	@include multiBrowserAnimation(user-select, none);
 	background-color: #fff;
   border-radius: 2.8rem;
 	cursor: pointer;
@@ -17,22 +18,15 @@
 	margin: 0 5px;
 	position: relative;
 	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
 	/* Circle */
 	span {
 		@include box(0);
 		@include positions(absolute, 50%, 0, 0, 50%);
+		@include multiBrowserAnimation(transition, all 0.3s);
 		border-radius: 0;
 		display: block;
 		margin: 0;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		-o-transition: all 0.3s;
-		transition: all 0.3s;
-}
+  }
 
   &:hover {
 	  span {
@@ -45,13 +39,10 @@
 	i {
 		@include box(2.8rem);
 		@include positions(absolute, 0, 0, 0, 0);
+		@include multiBrowserAnimation(transition, all 0.3s);
 		background: none;
 		color: white;
 		line-height: 2.8rem;
-		-webkit-transition: all 0.3s;
-			 -moz-transition: all 0.3s;
-				 -o-transition: all 0.3s;
-						transition: all 0.3s;
 		z-index: 10;
 	}
 	
