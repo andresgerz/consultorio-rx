@@ -17,18 +17,6 @@
   }
 
   .form-group__button--colors {
-    background-color: $color4;
-    border-color: $color4;
-
-    &:hover {
-      background-color: $color3;
-      border-color: $color3;
-    }
-
-    &:active {
-      background-color: $color1;
-      border-color: $color1;
-      color: #fff;
-    }
+    @include buttons($color4,$color3,$color1,#fff);
   } 
 }

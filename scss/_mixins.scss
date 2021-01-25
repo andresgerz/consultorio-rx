@@ -1,4 +1,4 @@
-@mixin animations($name,$iteration,$timing,$duration,$delay) {
+@mixin animations($name, $iteration, $timing, $duration, $delay) {
   animation-delay: $delay;
   animation-duration: $duration;
   animation-iteration-count: $iteration;
@@ -6,12 +6,45 @@
   animation-timing-function: $timing;
 }
 
-@mixin colors($c1,$c2) {
-  background-color: $c1;
-  color: $c2;
+@mixin colors($bgColor, $color) {
+  background-color: $bgColor;
+  color: $color;
 }
 
-@mixin texts($color,$fs) {
+@mixin texts($color, $fs) {
   color: $color;
   font-size: $fs;
 }
+
+@mixin buttons($bgColor1, $bgColor2, $bgColor3, $color) {
+  background-color: $bgColor1;
+
+  &:hover {
+    background-color: $bgColor2;
+  }
+
+  &:active {
+    @include colors($bgColor3, $color);
+  }
+}
+
+@mixin box($width, $height: $width){
+  width: $width;
+  height: $height;
+} 
+
+@mixin positions($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+} 
+/* 
+@mixin multiBrowsers($,$time,$) {
+  transition:all .5s ease;
+  -webkit-transition:all 05s ease;
+  -moz-transition:all 05s ease;
+  -ms-transition:all 05s ease;
+  -o-transition:all 05s ease;
+} */

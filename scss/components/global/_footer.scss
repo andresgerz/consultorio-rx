@@ -7,12 +7,12 @@
 }
 /* Wrapper */
 .icon-button {
+	@include box(2.8rem);
 	background-color: #fff;
   border-radius: 2.8rem;
 	cursor: pointer;
 	display: inline-block;
   font-size: 2.0rem;
-	height: 2.8rem;
 	line-height: 2.8rem;
 	margin: 0 5px;
 	position: relative;
@@ -21,29 +21,57 @@
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
-	width: 2.8rem;
-}
-/* Circle */
-.icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 0;
+	/* Circle */
+	span {
+		@include box(0);
+		@include positions(absolute, 50%, 0, 0, 50%);
+		border-radius: 0;
+		display: block;
+		margin: 0;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
 }
 
-.icon-button:hover span {
-  border-radius: 2.8rem;
-	height: 2.8rem;
-  margin: -1.4rem;
-	width: 2.8rem;
+  &:hover {
+	  span {
+			@include box(2.8rem);
+			border-radius: 2.8rem;
+			margin: -1.4rem;
+    }
+  }
+	/* Icons */
+	i {
+		@include box(2.8rem);
+		@include positions(absolute, 0, 0, 0, 0);
+		background: none;
+		color: white;
+		line-height: 2.8rem;
+		-webkit-transition: all 0.3s;
+			 -moz-transition: all 0.3s;
+				 -o-transition: all 0.3s;
+						transition: all 0.3s;
+		z-index: 10;
+	}
+	
+	.icon-whatsapp {
+		color: $color-whatsapp;
+	}
+	
+	.icon-facebook {
+		color: $color-facebook;
+	}
+	
+	.icon-linkedin {
+		color: $color-linkedin;
+	}
+
+	&:hover .icon-whatsapp,
+	&:hover .icon-facebook,
+	&:hover .icon-linkedin {
+		color: white;
+	}
 }
 
 .whatsapp span {
@@ -56,38 +84,4 @@
 
 .linkedin span {
 	background-color: $color-linkedin;
-}
-/* Icons */
-.icon-button i {
-	background: none;
-	color: white;
-	height: 2.8rem;
-	left: 0;
-	line-height: 2.8rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 2.8rem;
-	z-index: 10;
-}
-
-.icon-button .icon-whatsapp {
-	color: $color-whatsapp;
-}
-
-.icon-button .icon-facebook {
-	color: $color-facebook;
-}
-
-.icon-button .icon-linkedin {
-	color: $color-linkedin;
-}
-
-.icon-button:hover .icon-whatsapp,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-linkedin {
-	color: white;
 }

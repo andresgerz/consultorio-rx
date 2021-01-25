@@ -16,20 +16,22 @@ h1, h2, h3, h4, h5, h6 {
   @include colors($color2,#fff);
 }
 
-.sub-icon-lines svg {
-  height: 5px;
-  width: 100%;
+.sub-icon-lines {
+  svg {
+  @include box(100%, 5px);
+
+   line {
+     opacity: 0.5;
+     stroke: $color1; 
+     stroke-width: 5px;
+   } 
+  }
+  
+  i {
+    color: $color1;
+  }
 }
 
-.sub-icon-lines i {
-  color: $color1;
-}
-
-.sub-icon-lines svg line {
-  opacity: 0.5;
-  stroke: $color1; 
-  stroke-width: 5px;
-} 
 
 .breadcrumb--color {
   @include colors($color1,#fff);

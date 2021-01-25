@@ -22,27 +22,10 @@
   }
 
   button.form-wrapper__button--color {
-    background-color: $color4;
-    border-color: $color4;
-
-    &:hover {
-      background-color: $color3;
-      border: 2px solid $color3;
-    }
-
-    &:active {
-      background-color: $color1;
-      border: 2px solid $color1;
-      color: #fff;
-    }
+    @include buttons($color4,$color3,$color1,#fff);
   }
 }
 
-.contacto {
-
-  ul {
-    li {
-      list-style: none;
-    }
-  }
+.contacto ul li {
+  list-style: none;
 }

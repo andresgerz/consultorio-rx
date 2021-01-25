@@ -24,7 +24,10 @@
 }
 
 .main-title {
-  background-color: $color2;
+  @include colors($color2, #2d2d2d);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
 }
 
 *, *:before, *:after{
@@ -41,36 +44,16 @@ body{
   font-size: 16px;
 }
 
-.main-title{
-  color: #2d2d2d;
-  text-align: center;
-  text-transform: capitalize;
-  padding: 0.7em 0;
-}
-
 .wrapper-article {
   float: left;
   padding: 1em 0;
   width: 50%;
-}
 
-@media screen and (max-width: 640px){
-  .wrapper-article {
-    display: block;
-    width: 100%;
+  .title{
+   color: #1a1a1a;
+   text-align: center;
+   margin-bottom: 10px;
   }
-}
-
-@media screen and (min-width: 900px){
-  .wrapper-article {
-    width: 33.33333%;
-  }
-}
-
-.wrapper-article  .title{
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 10px;
 }
 
 .content {
@@ -79,25 +62,27 @@ body{
   margin: auto;
   max-width: 400px;
   width: 90%;
-}
 
-.content .content-overlay {
-  background: rgba(0,0,0,0.7);
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: all 0.4s ease-in-out 0s;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  width: 100%;
-}
+  .content-overlay {
+    @include box(100%);
+    @include positions(absolute, 0, 0, 0, 0);
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+  }
+  
+  &:hover {
+    .content-overlay{
+      opacity: 1;
+    }
 
-.content:hover .content-overlay{
-  opacity: 1;
+    .content-details{
+      @include positions(absolute, 50%, 0, 0, 50%);
+      opacity: 1;
+    }
+  }
 }
 
 .content-image{
@@ -105,39 +90,29 @@ body{
 }
 
 .content-details {
-  left: 50%;
+  @include positions(absolute, 50%, 0, 0, 50%);
   opacity: 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0 1em;
   text-align: center;
-  top: 50%;
   transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
-  position: absolute;
   width: 100%;
-}
 
-.content:hover .content-details{
-  left: 50%;
-  opacity: 1;
-  top: 50%;
-}
+  h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
 
-.content-details h3{
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-
-.content-details p{
-  color: #fff;
-  font-size: 0.8em;
+  p{
+    @include texts(#fff, 0.8em);
+  }
 }
 
 .fadeIn-top{
