@@ -195,67 +195,86 @@
         </div>
         <div class="container-fuild form-container mt-5">
           <h2 class="pt-5">Reserve su turno</h2>
-          <form class="p-5">
+          <form class="needs-validation p-5" 
+            name="form-turnos"
+            method="post"
+            action="../php/action_turnos.php"
+            novalidate>
             <div class="form-row">
               <div class="form-group offset-1 col-10 offset-sm-2 col-sm-8  offset-md-3 col-md-3">
-                <label for="inputEmail4">Nombre</label>
+                <label for="input_name_id">Nombre</label>
                 <input 
                   type="text" 
                   class="form-control" 
-                  placeholder="Gustavo Adrián" 
-                  id="inputNombre">
+                  placeholder="Gustavo Adrián"
+                  name="input_name" 
+                  id="input_name_id"
+                  required>
               </div>
               <div class="form-group offset-1 col-10 offset-sm-2 col-sm-8 offset-md-0 col-md-3">
-                <label for="inputPassword4">Apellido</label>
+                <label for="input_surname_id">Apellido</label>
                 <input 
                   type="text" 
                   class="form-control" 
-                  placeholder="Cerati" 
-                  id="inputApellido">
+                  placeholder="Cerati"
+                  name="input_surname" 
+                  id="input_surname_id"
+                  required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group offset-1 col-10 offset-sm-2 col-sm-5 offset-md-3 col-md-3 col-lg-2">
-                <label for="inputEmail4">DNI</label>
+                <label for="input_dni_id">DNI</label>
                 <input 
                   type="number" 
                   class="form-control" 
                   placeholder="11222333"
-                  id="inputDni">
+                  name="input_dni"
+                  id="input_dni_id"
+                  required>
               </div>
               <div class="form-group offset-1 col-10 offset-sm-2 col-sm-8 offset-md-3 col-md-5 offset-lg-0 col-lg-4">
-                <label for="inputEmail4">Email</label>
+                <label for="input_email_id">Email</label>
                 <input 
                   type="email" 
                   class="form-control" 
                   placeholder="gustavo_cerati@gmail.com"
-                  id="inputEmail">
+                  name="input_email"
+                  id="input_email_id"
+                  required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group offset-1 col-5 offset-sm-2 col-sm-3 offset-md-3 col-md-2 col-lg-1">
-                <label for="inputPassword4">Age</label>
+                <label for="input_age_id">Age</label>
                 <input 
                   type="number" 
                   class="form-control" 
                   placeholder="32"
-                  id="inputAge">
+                  name="input_age"
+                  id="input_age_id"
+                  required>
               </div>
               <div class="form-group offset-1 col-10 offset-sm-0 col-sm-5 offset-md-0 col-md-3 col-lg-2">
-                <label for="inputPassword4">Teléfono</label>
+                <label for="input_phone_id">Teléfono</label>
                 <input 
                   type="number" 
                   class="form-control" 
                   placeholder="372533334444"
-                  id="inputTelefono">
+                  name="input_phone"
+                  id="input_phone_id"
+                  required>
               </div>
             </div>  
             <div class="form-row">
               <div class="form-group offset-1 col-6 offset-sm-2 col-sm-3 offset-md-3 col-md-2 col-lg-2">
                 <label class="mr-sm-2" 
-                  for="inlineFormCustomSelect1">Hora
+                  for="input_hour_id">Hora
                 </label>
-                <select class="custom-select mr-sm-3" id="inlineFormCustomSelect1">
+                <select class="custom-select mr-sm-3"
+                  name="input_hour"
+                  id="input_hour_id"
+                  required>
                   <option selected="selected" value="0">hs</option>
                   <option value="">--- Mañana ---</option>
                   <option value="6:30">6:30 hs</option>
@@ -279,8 +298,12 @@
                 </select>
               </div>
               <div class="form-group offset-1 col-10 offset-sm-0 col-sm-5 col-md-3 col-lg-3">
-                <label for="inputPassword4">Fecha</label>
-                <input type="date" class="form-control" id="inputPassword4">
+                <label for="input_date_id">Fecha</label>
+                <input type="date" 
+                  class="form-control" 
+                  name="input_date"
+                  id="input_date_id"
+                  required>
               </div>
             </div>  
             <div class="form-row">
@@ -289,13 +312,14 @@
                   <input class="form-check-input" 
                     type="checkbox" 
                     value="" 
-                    id="invalidCheck" 
+                    name="input_check"
+                    id="input_check_id" 
                     required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Los datos ingresados son correctos.
+                  <label for="input_check_id">
+                    Mis datos son correctos.
                   </label>
-                  <div class="invalid-feedback">
-                    Debe aceptar antes de enviar.
+                  <div class="invalid-feedback alert alert-danger"   role="alert">
+                    ¡Debe completar todos los campos, controlar que sus datos esten correctos y aceptar el checkbox!
                   </div>
                 </div>
               </div>
@@ -346,5 +370,7 @@
     <!-- Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency) -->
     <script src="../js/bootstrap.bundle.min.js">
     </script>
+    <!-- Form validation -->
+    <script src="../js/validation.js"></script>
   </body>
 </html>

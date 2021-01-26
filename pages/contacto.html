@@ -131,25 +131,56 @@
               </div>
             </div>
             <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-4 form-wrapper">
-              <form>
+              <form name="form-contacto"
+                class="needs-validation" 
+                method="post" 
+                action="../php/action_contacto.php" 
+                novalidate>
                 <div class="form-row mb-3">
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre">
+                    <input type="text" 
+                      class="form-control"
+                      name="input_name"
+                      id="input_name_id" 
+                      placeholder="Nombre"
+                      required>
                   </div>
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellido">
+                    <input type="text"
+                    name="input_surname"
+                    id="input_surname_id" 
+                    class="form-control" 
+                    placeholder="Apellido"
+                    required>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                  <input type="email" 
+                    class="form-control"
+                    name="input_email" 
+                    id="input_email_id" 
+                    placeholder="Email"
+                    required>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Asunto">
+                  <input type="text" 
+                    class="form-control" 
+                    name="input_subject"
+                    id="input_subject_id" 
+                    placeholder="Asunto"
+                    required>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Mensaje"></textarea>
+                  <textarea class="form-control"
+                  name="input_message"      
+                  id="input_message_id" 
+                  rows="4" 
+                  placeholder="Mensaje"required></textarea>
                 </div>
-                <button type="submit" class="btn w-100 form-wrapper__button--color">Enviar</button>
+                <button type="submit" 
+                  class="btn w-100 form-wrapper__button--color">
+                  Enviar
+                </button>
               </form>
             </div>
           </div>
@@ -186,5 +217,7 @@
     <!-- Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency) -->
     <script src="../js/bootstrap.bundle.min.js">
     </script>
+    <!-- Form validation -->
+    <script src="../js/validation.js"></script>
   </body>
 </html>
