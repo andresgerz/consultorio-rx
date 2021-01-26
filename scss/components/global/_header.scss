@@ -14,8 +14,14 @@
   }
 }
 
+/* Logo animation */
 @keyframes logo_effect {
-  $logo_map: ("25%": 0.1px, "50%": 2px, "75%": 4px, "100%": 6px);
+  $logo_map: (
+    "25%": 0.1px, 
+    "50%": 2px, 
+    "75%": 4px, 
+    "100%": 6px
+    );
 
   @each $percentage, $border in $logo_map {
     #{$percentage} {
@@ -23,7 +29,6 @@
       color: rgba(255, 255, 255, 0.5);
     }
   }
-  
 }
 
 #header {
