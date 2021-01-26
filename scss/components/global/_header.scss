@@ -90,7 +90,7 @@
     }
     
     &:after {
-      @include positions(absolute, 1px, 8px, 0, 0);
+      @include positions(absolute, 1px);
       @include colors(rgba(53, 112, 153, 0.5), #fff);
       border-radius: 15px;
       content: attr(data-hover);
@@ -120,6 +120,5 @@
   }
  
   .navbar-animation a:after {
-    left: 8px;
   } 
 }
