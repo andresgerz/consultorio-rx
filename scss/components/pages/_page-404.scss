@@ -5,5 +5,13 @@
     background: -webkit-linear-gradient(to bottom, $color4, $color1);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, $color4, $color1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     @include box(100%, 100vh);
+    
+    .card-404 {
+      background-color: $color4;
+
+      a {
+        @include buttons($color1, $color2, $color3, #000);
+      }
+    }
   }
 }
