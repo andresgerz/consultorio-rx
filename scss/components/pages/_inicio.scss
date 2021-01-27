@@ -1,7 +1,6 @@
 .carousel-info {
   background-color: $color3;
 }
-
 /* Carousel-caption animation */
 .animista-flicker-1 {
   animation: flicker-1 2s linear infinite both;
@@ -122,7 +121,6 @@
     @include texts(#fff, 0.9em);
   }
 }
-
 /* Animista animation */
 .fadeIn-top{
   top: 20%;

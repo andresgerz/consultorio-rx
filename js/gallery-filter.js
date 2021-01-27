@@ -1,7 +1,3 @@
-// $('.portfolio-item').isotope({
-        //  	itemSelector: '.item',
-        //  	layoutMode: 'fitRows'
-        //  });
 $('.menu-filter ul li').click(function(){
   $('.menu-filter ul li').removeClass('active');
   $(this).addClass('active');

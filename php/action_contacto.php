@@ -1,5 +1,5 @@
 <?php
-
+/* From contacto form */
 $name = $_POST['input_name'];
 $surname = $_POST['input_surname'];
 $email = $_POST['input_email'];

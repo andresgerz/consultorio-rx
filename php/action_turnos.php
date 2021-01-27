@@ -1,5 +1,5 @@
 <?php
-  
+/* From turnos form */  
 $name = $_POST['input_name'];
 $surname = $_POST['input_surname'];
 $dni = $_POST['input_dni'];
